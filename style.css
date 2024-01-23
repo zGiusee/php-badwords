@@ -3,3 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.my_bg_black {
+    background-color: rgb(32, 32, 32);
+}

@@ -5,11 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     <title>php-badwords</title>
 </head>
 
 <body>
+    <div class="vh-100 my_bg_black ">
+        <div class="container">
+            <form action="response.php" method="GET">
+                <div class="row">
+                    <div class="col-6">
+                        <div>
+                            <label for="my_paragraph" class="py-3 text-white"> Paragrafo: </label>
+                            <textarea name="paragrafo" class="form-control" id="my_paragraph" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div>
+                            <label for="my_bad_word" class="py-3 text-white">Parola da censurare:</label>
+                            <input type="text" name="bad_word" id="my_bad_word" class="form-control">
+                        </div>
+                        <div class="py-3">
+                            <button type="submit" class="btn btn-danger">Censura</button>
+                        </div>
 
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
