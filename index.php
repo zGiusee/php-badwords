@@ -14,12 +14,16 @@
         <div class="container">
             <form action="response.php" method="GET">
                 <div class="row">
+
+                    <!-- PARAGRAPH TEXT AREA -->
                     <div class="col-6">
                         <div>
                             <label for="my_paragraph" class="py-3 text-white"> Paragrafo: </label>
                             <textarea name="paragrafo" class="form-control" id="my_paragraph" cols="30" rows="10"></textarea>
                         </div>
                     </div>
+
+                    <!-- SUBMIT BUTTON AND BAD_WORD TEXT BOX -->
                     <div class="col-6">
                         <div>
                             <label for="my_bad_word" class="py-3 text-white">Parola da censurare:</label>

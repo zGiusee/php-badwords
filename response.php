@@ -4,10 +4,14 @@ $paragrafo = $_GET['paragrafo'];
 // Parola che l'utente desidera censurare
 $bad_word = $_GET['bad_word'];
 
-
 // Operazione che mi consente di ricevere la lunghezza del paragrafo
 $lunghezza_paragrafo = strlen($paragrafo);
 
+// Operazione che mi consente rimpiazzare tuttle le bad_word con degli asterischi
+$paragrafo_censurato = str_replace($bad_word, '***', $paragrafo);
+
+// Operazione che mi consente di ricevere la lunghezza del paragrafo censurato
+$lunghezza_paragrafo_censurato = strlen($paragrafo_censurato);
 
 ?>
 
@@ -27,6 +31,7 @@ $lunghezza_paragrafo = strlen($paragrafo);
         <div class="container">
             <div class="row">
 
+                <!-- BASE PARAGRAPH -->
                 <div class="col-12 py-5">
                     <h2 class="text-white py-2"> Paragrafo senza censura: </h2>
                     <div>
@@ -34,6 +39,17 @@ $lunghezza_paragrafo = strlen($paragrafo);
                     </div>
 
                     <p class="text-white">Lungezza del paragrafo: <?php echo $lunghezza_paragrafo ?></p>
+
+                </div>
+
+                <!-- CENSURED PARAGRAPH -->
+                <div class="col-12 py-5">
+                    <h2 class="text-white py-2"> Paragrafo con censura: </h2>
+                    <div>
+                        <p class="text-white"> <?php echo $paragrafo_censurato ?></p>
+                    </div>
+
+                    <p class="text-white">Lungezza del paragrafo: <?php echo $lunghezza_paragrafo_censurato ?></p>
 
                 </div>
 
